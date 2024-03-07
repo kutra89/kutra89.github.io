@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
+        
+    </head>
+    <body>
+        
+    <div class="contenedor">
+        <img src="/imagenes/Logo.png"  alt="" id="logo">
+            <div class="encriptar">
+        <textarea autofocus name="texto" class="texto" cols="30" rows="10" id="texto"  
+        placeholder="Ingresa el texto aquí"></textarea>
+
+        <div class="condicion">
+            <img src="/imagenes/Group.png">
+                <p class="terminos"> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+        <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        
+        </div>
+    </div>
+<div class="encriptado">
+    <img src="imagenes/morraco.png" alt="" id="morraco" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="mensajeFinal">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+    </div>
+    </div>
+    <div class="pie">
+        <footer>
+            <b>Nixon Lopez 2024 </b>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
